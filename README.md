@@ -41,3 +41,11 @@ Best model:
 | 100%                         | Bagging                    | 90.71                 | 89.73                 | 89.88              | 88.93              |
 
 ### Overall Conclusion
+|              | f1_weighted | accuracy  | precision_weighted | recall_weighted |
+|--------------|-------------|-----------|--------------------|-----------------|
+| Experiment 1 | 87.9688     |  89.30665 | 87.58984           | 89.30665        |
+| Experiment 2 | 89.04066    | 90.01438  | 88.7255            | 90.01438        |
+| Experiment 3 | 88.96025    | 89.91485  | 88.62369           | 89.91485        |
+| Experiment 4 | 89.09303    | 89.71580  | 88.73745           | 89.71580        |
+
+We recommend the Decision Tree model that utilizes the beforementioned hyperparameters with SFS-Forward feature selection and 90% varying training sample size for the prediction of bank term deposit subscriptions. This combination provided a robust and accurate predictive model with the best F1 score that handles class imbalance and generalizes well to unseen data. 
