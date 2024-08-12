@@ -1,1 +1,1 @@
-# Term-Deposit-Subscription-Classi-cation
+# Term-Deposit-Subscription-Classification
