@@ -16,3 +16,13 @@ Given the attributes of client interactions during direct marketing campaigns, c
 | Decision Tree  (random_state=0)    | 'criterion'        : 'entropy' 'max_depth'        : 7 'min_samples_split': 30 'min_samples_leaf' : 2 'max_features'     : None | 88%                          |
 | Gaussian NB                        | 'var_smoothing': 1.0                                                                                                           | 83%                          |
 | Bernoulli NB                       | 'binarize'   : 0.1 'alpha'      : 0.0 'force_alpha': True 'fit_prior'  : True                                                  | 86%                          |
+
+#### Experiment Set 2: Selecting features
+| Method            | features                                                                                                                 | f1 weighted | accuracy | Precision weighted | Recall weighted |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------|-------------|----------|--------------------|-----------------|
+| SFS - Forward     | ['age', 'job', 'marital', 'education',   'duration', 'pdays', 'previous', 'poutcome']                                    | 89.04       | 90.01    | 88.73              | 90.01           |
+| SFS - Backward    | ['age', 'education', 'balance', 'duration',   'pdays', 'previous', 'poutcome']                                           | 89.02       | 89.96    | 88.69              | 89.96           |
+| Info gain + ANOVA | ['poutcome', 'duration', 'campaign',   'pdays', 'previous']                                                              | 88.94       | 89.99    | 88.64              | 89.99           |
+| Chi2 + ANOVA      | ['job', 'marital', 'education', 'housing',   'loan', 'contact', 'poutcome', 'duration', 'campaign', 'pdays', 'previous'] | 88.03       | 89.40    | 87.68              | 89.40           |
+
+#### Experiment Set 3: Ensemble learning
