@@ -26,3 +26,18 @@ Given the attributes of client interactions during direct marketing campaigns, c
 | Chi2 + ANOVA      | ['job', 'marital', 'education', 'housing',   'loan', 'contact', 'poutcome', 'duration', 'campaign', 'pdays', 'previous'] | 88.03       | 89.40    | 87.68              | 89.40           |
 
 #### Experiment Set 3: Ensemble learning
+| Method    | F1-Score on Best Model in Experiment Set 1 | F1-Score on Best Model in Experiment Set 2 |
+|-----------|--------------------------------------------|--------------------------------------------|
+| Bagging   | 88.46                                      | 88.96                                      |
+| AdaBoost  | 86.97                                      | 86.35                                      |
+| Stacking  | 88.09                                      | 88.68                                      |
+
+#### Experiment Set 4: Varying training sample size
+Best model:
+| Varying Training sample size | Best Performing Models     | Accuracy (Validation) | F1 Score (Validation) | Accuracy (Testing) | F1 Score (Testing) |
+|------------------------------|----------------------------|-----------------------|-----------------------|--------------------|--------------------|
+| 90%                          | Decision Tree (8 Features) | 90.41                 | 89.69                 | 89.72              | 89.09              |
+| 100%                         | Decision Tree (8 Features) | 90.58                 | 89.54                 | 90.01              | 89.04              |
+| 100%                         | Bagging                    | 90.71                 | 89.73                 | 89.88              | 88.93              |
+
+### Overall Conclusion
